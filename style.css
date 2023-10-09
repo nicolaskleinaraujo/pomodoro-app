@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Quicksand:wght@600&family=Roboto:ital@1&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    background-color: #5BA8C2;
+}
+
+h1 {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section#buttons {
+    text-align: center;
+}
+
+section#buttons > button {
+    background-color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.4em;
+    margin: 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+section#buttons > button:hover{
+    background-color: #437C8F;
+    transition: 0.3s;
+}
+
+section#timer {
+    text-align: center;
+}
+
+section#timer > div {
+    margin: 15px 0px;
+    font-size: 5em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+section#timer > button {
+    border: none;
+}
+
+section#timer > button > span {
+    background-color: white;
+    border-radius: 50%;
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+section#timer > button > span:hover {
+    background-color: lightgray;
+    transition: 0.3s;
+}
+
+main {
+    display: flex;
+    padding: 5px;
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+}
+
+main > div#info {
+    width: 50%;
+    margin: 10px;
+}
+
+main > div > h2 {
+    font-size: 2em;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main > div > p {
+    text-align: justify;
+    text-indent: 35px;
+    font-size: 1.4em;
+    background-color: white;
+    padding: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+main > div#todo-list {
+    text-align: center;
+    width: 50%;
+    margin: 10px;
+    padding: 20px 10px 10px 10px;
+    background-color: white;
+}
+
+main > div#todo-list > h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer > p {
+    padding: 20px;
+}
+
+footer > p, a {
+    color: white;
+    background-color: #1F3A42;
+}
+
+footer > p > a {
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.205);
+}

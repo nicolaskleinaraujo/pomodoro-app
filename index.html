@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Pomodoro App</title>
+</head>
+<body>
+    <h1>Pomodoro App</h1>
+
+    <section id="buttons">
+        <button type="button" id="focus" onclick="timeFocus()">POMODORO</button>
+        <button type="button" id="short-bk" onclick="timeShort()">SHORT BREAK</button>
+        <button type="button" id="long-bk" onclick="timeLong()">LONG BREAK</button>
+    </section>
+
+    <section id="timer">
+        <div id="countdown">00:00</div>
+        <button type="button" onclick="startTimer()"><span class="material-symbols-outlined">play_pause</span></button>
+    </section>
+
+    <main>
+        <div id="info">
+            <h2>O que é o Método Pomodoro?</h2>
+            <p>O Método Pomodoro é uma técnica de gerenciamento de tempo desenvolvida por Francesco Cirillo no final da década de 1980. O metodo é projetado para melhorar a produtividade e a concentração, dividindo o trabalho em blocos de tempo curtos e focados, geralmente de 25 minutos, chamados "pomodoros", seguidos por pausas curtas de 5 minutos. Após quatro pomodoros consecutivos, é recomendada uma pausa mais longa de 15 minutos. O Método Pomodoro ajuda a combater a procrastinação, permite que você acompanhe o tempo gasto em tarefas e promove a disciplina pessoal.</p>
+        </div>
+
+        <div id="todo-list">
+            <h2>TODO-LIST</h2>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/nicolaskleinaraujo" target="_blank">Nicolas Klein</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
