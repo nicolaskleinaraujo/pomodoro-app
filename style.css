@@ -5,17 +5,23 @@
 * {
     padding: 0px;
     margin: 0px;
-    background-color: #5BA8C2;
+    background-color: #0A5C78;
 }
 
 h1 {
     padding: 15px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    background-color: #5BA8C2;
+    max-width: 980px;
+    margin: auto;
 }
 
 section#buttons {
     text-align: center;
+    background-color: #5BA8C2;
+    max-width: 1010px;
+    margin: auto;
 }
 
 section#buttons > button {
@@ -35,16 +41,23 @@ section#buttons > button:hover{
 
 section#timer {
     text-align: center;
+    background-color: #5BA8C2;
+    max-width: 1010px;
+    margin: auto;
 }
 
 section#timer > div {
     margin: 15px 0px;
     font-size: 5em;
     font-family: 'Quicksand', sans-serif;
+    background-color: #5BA8C2;
+    margin: auto;
 }
 
 section#timer > button {
+    background-color: #5BA8C2;
     border: none;
+    margin: 0px 5px;
 }
 
 section#timer > button > span {
@@ -55,7 +68,7 @@ section#timer > button > span {
 }
 
 section#timer > button > span:hover {
-    background-color: lightgray;
+    background-color: #437C8F;
     transition: 0.3s;
 }
 
@@ -105,7 +118,6 @@ main > div#todo-list > h2 {
 
 footer {
     text-align: center;
-    margin-top: 10px;
 }
 
 footer > p {
@@ -122,6 +134,9 @@ footer > p > a {
 }
 
 footer > p > a:hover {
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.205);
+    transition: 0.5s;
+    padding: 2px;
+    font-weight: bolder;
 }
