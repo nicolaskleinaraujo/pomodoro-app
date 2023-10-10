@@ -1,4 +1,5 @@
 var countdown = document.querySelector('#countdown')
+var audio = new Audio('external/timer-end-sound.mp3')
 var duration = 0
 var active = false
 var pause = false
@@ -10,7 +11,7 @@ function timeFocus() {
 
 function timeShort() {
     countdown.innerHTML = '05:00'
-    duration = 5 * 60
+    duration = 1 * 60
 }
 
 function timeLong() {
@@ -37,7 +38,7 @@ function startTimer() {
 
                     if (--timer < 0) {
                         clearInterval(refreshTimer)
-                        window.alert('O TIMER ACABOU!')
+                        audio.play()
                         duration = 0
                     }
                 } else {
