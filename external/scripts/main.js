@@ -1,5 +1,5 @@
 var countdown = document.querySelector('#countdown')
-var audio = new Audio('external/timer-end-sound.mp3')
+var audio = new Audio('external/files/timer-end-sound.mp3')
 var duration = 0
 var active = false
 var pause = false
