@@ -11,7 +11,7 @@ function timeFocus() {
 
 function timeShort() {
     countdown.innerHTML = '05:00'
-    duration = 1 * 60
+    duration = 5 * 60
 }
 
 function timeLong() {
