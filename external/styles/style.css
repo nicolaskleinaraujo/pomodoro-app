@@ -34,7 +34,7 @@ section#buttons > button {
     font-family: 'Quicksand', sans-serif;
 }
 
-section#buttons > button:hover{
+section#buttons > button:hover {
     background-color: #437C8F;
     transition: 0.3s;
 }
@@ -128,18 +128,22 @@ main > div#todo-list > ul > li {
     background-color: #5BA8C2;
     margin: 10px;
     font-size: 1.3em;
+    padding: 5px;
 }
 
 main > div#todo-list > ul > li > span {
+    display: inline-block;
     background-color: #5BA8C2;
-    font-size: 0.8em;
+    font-weight: bolder;
     margin-left: 20px;
-    padding: 3px;
+    border-radius: 50%;
+    width: 25px;
 }
 
 main > div#todo-list > ul > li > span:hover {
     background-color: #437C8F;
     transition: 0.3s;
+    cursor: default;
 }
 
 main > div#todo-list > input#tasktxt {
@@ -147,7 +151,7 @@ main > div#todo-list > input#tasktxt {
     background-color: white;
     border-radius: 10px;
     font-size: 1.3em;
-    text-indent: 5px;
+    text-align: center;
 }
 
 main > div#todo-list > button {
@@ -158,6 +162,8 @@ main > div#todo-list > button {
 main > div#todo-list > button > span {
     background-color: white;
     border-radius: 50%;
+    position: absolute;
+    translate: 3px -20px;
 }
 
 main > div#todo-list > button > span:hover {
@@ -180,12 +186,11 @@ footer > p, a {
 
 footer > p > a {
     text-decoration: none;
+    font-weight: bolder;
 }
 
 footer > p > a:hover {
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.205);
-    transition: 0.5s;
-    padding: 2px;
-    font-weight: bolder;
+    transition: 0.3s;
 }

@@ -61,21 +61,27 @@ function pauseTimer() {
 
 function addTask() {
     let inputTask = document.querySelector('#tasktxt')
-    if (inputTask.value === '') {
-        document.alert('[ERRO] Primeiro digite uma tarefa!')
+    const numOfLis = document.querySelectorAll('li').length
+    if (numOfLis <= 7) {
+        if (inputTask.value === '') {
+            document.alert('[ERRO] Primeiro digite uma tarefa!')
+        } else {
+            let li = document.createElement('li')
+            li.innerText = inputTask.value
+            list.appendChild(li)
+            inputTask.value = ''
+            let span = document.createElement('span')
+            span.innerHTML = '\u00d7'
+            li.appendChild(span)
+        }
     } else {
-        let li = document.createElement('li')
-        li.innerText = inputTask.value
-        list.appendChild(li)
+        window.alert('[ERRO] O numero maximo de tarefas foi excedido!')
         inputTask.value = ''
-        let span = document.createElement('span')
-        span.innerHTML = '\u00d7'
-        li.appendChild(span)
     }
 }
 
-list.addEventListener('click', function(d){
-    if (d.target.tagName === 'SPAN') {
-        d.target.parentElement.remove()
+list.addEventListener('click', function(del){
+    if (del.target.tagName === 'SPAN') {
+        del.target.parentElement.remove()
     }
 })
