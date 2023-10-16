@@ -132,18 +132,14 @@ main > div#todo-list > ul > li {
 
 main > div#todo-list > ul > li > span {
     background-color: #5BA8C2;
-    font-size: 0.9em;
+    font-size: 0.8em;
     margin-left: 20px;
-}
-
-main > div#todo-list > ul > li > span {
     padding: 3px;
-    background-color: #5BA8C2;
 }
 
 main > div#todo-list > ul > li > span:hover {
     background-color: #437C8F;
-    border-radius: 50%;
+    transition: 0.3s;
 }
 
 main > div#todo-list > input#tasktxt {
