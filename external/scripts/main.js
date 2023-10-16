@@ -3,7 +3,7 @@ var audio = new Audio('external/files/timer-end-sound.mp3')
 var duration = 0
 var active = false
 var pause = false
-var task
+var list = document.querySelector('#todo-ul')
 
 function timeFocus() {
     countdown.innerHTML = '25:00'
@@ -59,20 +59,23 @@ function pauseTimer() {
     }
 }
 
-/* function addTask() {
-    var taskBox = document.querySelector('#tasktxt')
-    var taskText = document.createElement('span')
-    var taskIcon = document.createElement('span.material-symbols-outlined')
-    var taskButton = document.createElement('button')
-    var taskLi = document.createElement('li')
-    
-    taskText.text = `${taskBox}`
-    taskLi.appendChild(taskText)
+function addTask() {
+    let inputTask = document.querySelector('#tasktxt')
+    if (inputTask.value === '') {
+        document.alert('[ERRO] Primeiro digite uma tarefa!')
+    } else {
+        let li = document.createElement('li')
+        li.innerText = inputTask.value
+        list.appendChild(li)
+        inputTask.value = ''
+        let span = document.createElement('span')
+        span.innerHTML = '\u00d7'
+        li.appendChild(span)
+    }
+}
 
-    taskIcon.text('delete')
-    taskButton.appendChild(taskIcon)
-    taskLi.appendChild(taskButton)
-
-    todoList = document.querySelector('#todo-ol')
-    todoList.appendChild(taskLi)
-} */
+list.addEventListener('click', function(d){
+    if (d.target.tagName === 'SPAN') {
+        d.target.parentElement.remove()
+    }
+})
