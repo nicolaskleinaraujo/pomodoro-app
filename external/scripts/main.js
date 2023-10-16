@@ -3,6 +3,7 @@ var audio = new Audio('external/files/timer-end-sound.mp3')
 var duration = 0
 var active = false
 var pause = false
+var task
 
 function timeFocus() {
     countdown.innerHTML = '25:00'
@@ -57,3 +58,21 @@ function pauseTimer() {
         pause = false
     }
 }
+
+/* function addTask() {
+    var taskBox = document.querySelector('#tasktxt')
+    var taskText = document.createElement('span')
+    var taskIcon = document.createElement('span.material-symbols-outlined')
+    var taskButton = document.createElement('button')
+    var taskLi = document.createElement('li')
+    
+    taskText.text = `${taskBox}`
+    taskLi.appendChild(taskText)
+
+    taskIcon.text('delete')
+    taskButton.appendChild(taskIcon)
+    taskLi.appendChild(taskButton)
+
+    todoList = document.querySelector('#todo-ol')
+    todoList.appendChild(taskLi)
+} */

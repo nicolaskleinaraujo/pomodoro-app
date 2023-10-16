@@ -116,6 +116,52 @@ main > div#todo-list > h2 {
     background-color: white;
 }
 
+main > div#todo-list > ul {
+    list-style-type: none;
+    background-color: blue;
+}
+
+main > div#todo-list > ul > li {
+    background-color: blue;
+    margin: 10px;
+}
+
+main > div#todo-list > ul > li > span {
+    background-color: blue;
+}
+
+main > div#todo-list > ul > li > button {
+    border: none;
+}
+
+main > div#todo-list > ul > li > button> span {
+    padding: 3px;
+    background-color: blue;
+}
+
+main > div#todo-list > ul > li > button> span:hover {
+    background-color: #437C8F;
+    border-radius: 50%;
+}
+
+main > div#todo-list > input#tasktxt {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+main > div#todo-list > button {
+    background-color: white;
+    border: none;
+}
+
+main > div#todo-list > button > span {
+    background-color: white;
+    border-color: blue;
+    border-radius: 50%;
+}
+
 footer {
     text-align: center;
 }
