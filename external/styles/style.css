@@ -118,28 +118,30 @@ main > div#todo-list > h2 {
 
 main > div#todo-list > ul {
     list-style-type: none;
-    background-color: blue;
+    background-color: #5BA8C2;
+    max-width: 300px;
+    margin: auto;
+    border-radius: 10px;
 }
 
 main > div#todo-list > ul > li {
-    background-color: blue;
+    background-color: #5BA8C2;
     margin: 10px;
+    font-size: 1.3em;
 }
 
 main > div#todo-list > ul > li > span {
-    background-color: blue;
+    background-color: #5BA8C2;
+    font-size: 0.9em;
+    margin-left: 20px;
 }
 
-main > div#todo-list > ul > li > button {
-    border: none;
-}
-
-main > div#todo-list > ul > li > button> span {
+main > div#todo-list > ul > li > span {
     padding: 3px;
-    background-color: blue;
+    background-color: #5BA8C2;
 }
 
-main > div#todo-list > ul > li > button> span:hover {
+main > div#todo-list > ul > li > span:hover {
     background-color: #437C8F;
     border-radius: 50%;
 }
@@ -148,7 +150,8 @@ main > div#todo-list > input#tasktxt {
     margin-top: 10px;
     background-color: white;
     border-radius: 10px;
-    
+    font-size: 1.3em;
+    text-indent: 5px;
 }
 
 main > div#todo-list > button {
@@ -158,8 +161,12 @@ main > div#todo-list > button {
 
 main > div#todo-list > button > span {
     background-color: white;
-    border-color: blue;
     border-radius: 50%;
+}
+
+main > div#todo-list > button > span:hover {
+    transition: 0.3s;
+    background-color: #437C8F;
 }
 
 footer {
