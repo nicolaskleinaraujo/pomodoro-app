@@ -1,6 +1,6 @@
 # Study site made with JavaScript
  ![MIT License](https://img.shields.io/badge/license-MIT-blue)<br>
- <img src="./assets/Home-Screen.jpg" alt="Print Index Page" width="700">.
+ <img src="./assets/home-screen.jpg" alt="Print Index Page" width="700">.
  ### App: https://nicolaskleinaraujo.github.io/pomodoro-web/
 
 # About
