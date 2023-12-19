@@ -18,8 +18,7 @@
  - CSS
 
  ### Implantation
- - Github Pages
- - App: https://nicolaskleinaraujo.github.io/pomodoro-web/
+ - Website: https://nicolaskleinaraujo.github.io/pomodoro-web/
 
 # Author
  Nicolas Klein Faria de Araujo <br>
