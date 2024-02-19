@@ -22,4 +22,4 @@
 
 # Author
  Nicolas Klein Faria de Araujo <br>
- https://nicolaskleinaraujo.github.io/portfolio/
+ https://nk-portfolio-react.netlify.app
